@@ -5,7 +5,7 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: "src/assets"
-public_folder: "/assets"
+public_folder: "/public"
 
 collections:
   - name: "blog"
@@ -14,7 +14,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "pubDate", widget: "datetime"}
       - {label: "Featured Image", name: "heroImage", widget: "image"}
